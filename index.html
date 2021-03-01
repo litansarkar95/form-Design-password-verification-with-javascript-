@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery.passwordstrength.js" ></script>
+</head>
+<body>
+
+    <form>
+        <img src="63081-profile-computer-social-user-icons-free-frame-thumb.png">
+        <div class="input-box">
+            <span><i class="fa fa-user-o"></i></span><input type="text" placeholder="User Name" required>
+
+        </div>
+        <div class="input-box">
+            <span><i class="fa fa-envelope-o"></i></span><input type="email" placeholder="Email" required>
+
+        </div>
+        <div class="input-box">
+            <span><i class="fa fa-key"></i></span><input type="password" id="password" placeholder="Password" required>
+
+        </div>
+        <button type="submit"><i class="fa fa-sign-in"></i>Register</button>
+    </form>
+    <script>
+        $(function(){
+            $("#password").passwordStrength();
+        });
+    </script>
+</body>
+</html>
